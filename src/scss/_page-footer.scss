@@ -1,0 +1,19 @@
+.page-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.page-footer__row {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-footer__copyright {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #bdbdbd;
+    max-width: 80rem;
+}

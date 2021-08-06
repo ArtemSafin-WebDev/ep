@@ -1,0 +1,65 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<section class="home">
+    <div class="container">
+        <div class="home__row">
+            <div class="home__col">
+                <div class="home__content">
+                    <h1 class="home__heading">
+                        Сервис проверки электронной подписи
+                    </h1>
+                    <div class="home__text">`
+                        <p>
+                            Проверьте подлинность открытого ключа электронной подписи (ЭП; ранее - электронная цифровая
+                            подпись, ЭЦП).
+                        </p>
+                    </div>
+                    <div class="home__checked">
+                        Проверено документов: <em>123</em>
+                    </div>
+                </div>
+            </div>
+            <div class="home__col">
+                <form action="/" method="POST" class="home__form" data-need-validation="">
+                    <h2 class="home__form-heading">
+                        Проверить сертификат
+                    </h2>
+                    <div class="home__form-text">
+                        <p>
+                            Установите электронную подпись и «нажмите «Далее»
+                        </p>
+
+                    </div>
+                    <div class="home__form-block" id="select-errors">
+                        <div class="home__form-label">
+                            Сертификат <sup>*</sup>
+                        </div>
+                        <div class="home__form-select">
+                            <select name="certificate" class="js-custom-select" required data-parsley-errors-container="#select-errors">
+                                <option value="" placeholder>— Не выбрано</option>
+                                <option value="1">
+                                    Сертификат 1
+                                </option>
+                                <option value="2">
+                                    Сертификат 2
+                                </option>
+                                <option value="3">
+                                    Сертификат 3
+                                </option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <button class="btn home__form-button" type="submit">
+                        Далее
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}
