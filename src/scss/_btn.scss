@@ -7,8 +7,34 @@
     font-size: 1.6rem;
     line-height: 1.9rem;
     background: #212121;
+    border: 1px solid #212121;
     border-radius: 2.5rem;
     color: white;
     margin: 0 auto;
     padding: 1.5rem 6rem;
+    transition: background-color 0.2s, color 0.2s, border-color .2s;
+
+    &:link,
+    &:visited {
+        color: white;
+    }
+  
+
+    &--hollow {
+        background: transparent;
+        border: 1px solid #bdbdbd;
+        color: #212121;
+
+        &:link,
+        &:visited {
+            color: #212121;
+        }
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        background-color: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
+    }
 }

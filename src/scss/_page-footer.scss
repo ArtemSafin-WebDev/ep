@@ -3,6 +3,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    pointer-events: none;
 }
 
 .page-footer__row {
@@ -16,4 +17,5 @@
     line-height: 1.4rem;
     color: #bdbdbd;
     max-width: 80rem;
+    pointer-events: initial;
 }

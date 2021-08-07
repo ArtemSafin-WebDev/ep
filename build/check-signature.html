@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css" />
     <title>
-        Проверить сертификат
+        Проверить подпись
     </title>
 </head>
 
@@ -73,36 +73,85 @@
             <div class="home__col">
                 <form action="/" method="POST" class="home__form" data-need-validation="">
                     <h2 class="home__form-heading">
-                        Проверить сертификат
+                        Проверить подпись
                     </h2>
                     <div class="home__form-text">
                         <p>
-                            Установите электронную подпись и «нажмите «Далее»
+                            Загрузите документ со встроенной подписью в формате *.xml или *.pdf, пару файлов: документ
+                            в формате *.sig или архив с файлами, подпись которых необходимо проверить
                         </p>
 
                     </div>
-                    <div class="home__form-block" id="select-errors">
+                    <div class="home__form-block">
                         <div class="home__form-label">
-                            Сертификат <sup>*</sup>
+                            Документ или архив <sup>*</sup>
                         </div>
-                        <div class="home__form-select">
-                            <select name="certificate" class="js-custom-select" required data-parsley-errors-container="#select-errors">
-                                <option value="" placeholder>— Не выбрано</option>
-                                <option value="1">
-                                    Сертификат 1
-                                </option>
-                                <option value="2">
-                                    Сертификат 2
-                                </option>
-                                <option value="3">
-                                    Сертификат 3
-                                </option>
-                            </select>
+                        <div class="home__file-upload js-file-upload-dropzone">
+                            <div class="home__file-upload-dropzone">
+                                <div class="home__file-upload-dropzone-content">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-upload">
+                                        <use xlink:href="#upload"></use>
+                                    </svg>
+                                    <div class="home__file-upload-dropzone-text">
+                                        <p>
+                                            Перетащите файлы или нажмите здесь,<br>
+                                            чтобы загрузить
+                                        </p>
+                                    </div>
+                                </div>
+                                <label class="home__file-upload-dropzone-label">
+                                    <input type="file" name="file1[]" class="home__file-upload-dropzone-input">
+                                </label>
+                                <label class="home__file-upload-dropzone-label">
+                                    <input type="file" name="file1[]" class="home__file-upload-dropzone-input">
+                                </label>
+                            </div>
+                            
+                            <div class="home__file-upload-error">
+                                <div class="home__file-upload-error-text">
+                                    Ошибка загрузки
+                                </div>
+
+                                <svg width="14" height="14" aria-hidden="true" class="icon-refresh">
+                                    <use xlink:href="#refresh"></use>
+                                </svg>
+                            </div>
                         </div>
+
+
+                    </div>
+                    <div class="home__form-block">
+                        <div class="home__form-label">
+                            Электронная подпись <sup>*</sup>
+                        </div>
+                        <div class="home__file-upload js-file-upload-dropzone">
+                            <div class="home__file-upload-dropzone">
+                                <div class="home__file-upload-dropzone-content">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-upload">
+                                        <use xlink:href="#upload"></use>
+                                    </svg>
+                                    <div class="home__file-upload-dropzone-text">
+                                        <p>
+                                            Перетащите файлы или нажмите здесь,<br>
+                                            чтобы загрузить
+                                        </p>
+                                    </div>
+                                </div>
+                                <label class="home__file-upload-dropzone-label">
+                                    <input type="file" name="file1[]" class="home__file-upload-dropzone-input">
+                                </label>
+                                <label class="home__file-upload-dropzone-label">
+                                    <input type="file" name="file1[]" class="home__file-upload-dropzone-input">
+                                </label>
+                            </div>
+                            
+                            
+                        </div>
+
 
                     </div>
                     <button class="btn home__form-button" type="submit">
-                        Далее
+                        Проверить
                     </button>
                 </form>
             </div>

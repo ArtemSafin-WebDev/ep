@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css" />
     <title>
-        Проверить сертификат
+        Подпись успешно прошла проверку
     </title>
 </head>
 
@@ -71,40 +71,145 @@
                 </div>
             </div>
             <div class="home__col">
-                <form action="/" method="POST" class="home__form" data-need-validation="">
-                    <h2 class="home__form-heading">
-                        Проверить сертификат
+                <div class="home__check-result">
+                    <h2 class="home__check-result-heading">
+                        Сведения об электронной подписи
                     </h2>
-                    <div class="home__form-text">
-                        <p>
-                            Установите электронную подпись и «нажмите «Далее»
-                        </p>
-
+                    <div class="home__check-result-text">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-success">
+                            <use xlink:href="#success"></use>
+                        </svg>
+                        Подпись успешно прошла проверку
                     </div>
-                    <div class="home__form-block" id="select-errors">
-                        <div class="home__form-label">
-                            Сертификат <sup>*</sup>
-                        </div>
-                        <div class="home__form-select">
-                            <select name="certificate" class="js-custom-select" required data-parsley-errors-container="#select-errors">
-                                <option value="" placeholder>— Не выбрано</option>
-                                <option value="1">
-                                    Сертификат 1
-                                </option>
-                                <option value="2">
-                                    Сертификат 2
-                                </option>
-                                <option value="3">
-                                    Сертификат 3
-                                </option>
-                            </select>
-                        </div>
+                    <div class="home__check-result-table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        ФИО
+                                    </th>
+                                    <td>
+                                        МИ ФНС России по ЦОД
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        ИНН
+                                    </th>
+                                    <td>
+                                        007733535730
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Адрес
+                                    </th>
+                                    <td>
+                                        Россия, г. Москва, Походный проезд, домовладение 3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        СНИЛС
+                                    </th>
+                                    <td>
 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Должность
+                                    </th>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Организация
+                                    </th>
+                                    <td>
+                                        МИ ФНС России по ЦОД
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Номер сертификата
+                                    </th>
+                                    <td>
+                                        30428000B7AC189F475D218EB601BAD
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Сертификат выдан
+                                    </th>
+                                    <td>
+                                        Федеральная налоговая служба
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Дата и время проверки
+                                    </th>
+                                    <td>
+                                        31.03.2021 07:49:23
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Дата и время подписания
+                                    </th>
+                                    <td>
+                                        09.03.2021 06:34:47 +03:00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Статус подписи
+                                    </th>
+                                    <td>
+                                        <b>
+                                            Подпись действительна
+                                        </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Статус сертификата
+                                    </th>
+                                    <td>
+                                        Сертификат действителен
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Сертификат действителен с
+                                    </th>
+                                    <td>
+                                        21.01.2021 10:36:59
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Секртификат действителен ло
+                                    </th>
+                                    <td>
+                                        21.01.2022 10:46:59
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <button class="btn home__form-button" type="submit">
-                        Далее
-                    </button>
-                </form>
+                    <div class="home__check-result-btns">
+                        <a href="#" class="btn btn--hollow home__check-result-btn">
+                            Новая проверка
+                        </a>
+                        <a href="#" class="btn home__check-result-btn">
+                            Скачать результаты
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

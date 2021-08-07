@@ -1,0 +1,114 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+
+<section class="home">
+    <div class="container">
+        <div class="home__row">
+            <div class="home__col">
+                <div class="home__content">
+                    <h1 class="home__heading">
+                        Сервис проверки электронной подписи
+                    </h1>
+                    <div class="home__text">
+                        <p>
+                            Проверьте подлинность открытого ключа электронной подписи (ЭП; ранее - электронная цифровая
+                            подпись, ЭЦП).
+                        </p>
+                    </div>
+                    <div class="home__checked">
+                        Проверено документов: <em>123</em>
+                    </div>
+                </div>
+            </div>
+            <div class="home__col">
+                <form action="/" method="POST" class="home__form" data-need-validation="">
+                    <h2 class="home__form-heading">
+                        Проверить подпись
+                    </h2>
+                    <div class="home__form-text">
+                        <p>
+                            Загрузите документ со встроенной подписью в формате *.xml или *.pdf, пару файлов: документ
+                            в формате *.sig или архив с файлами, подпись которых необходимо проверить
+                        </p>
+
+                    </div>
+                    <div class="home__form-block">
+                        <div class="home__form-label">
+                            Документ или архив <sup>*</sup>
+                        </div>
+                        <div class="home__file-upload js-file-upload-dropzone">
+                            <div class="home__file-upload-dropzone">
+                                <div class="home__file-upload-dropzone-content">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-upload">
+                                        <use xlink:href="#upload"></use>
+                                    </svg>
+                                    <div class="home__file-upload-dropzone-text">
+                                        <p>
+                                            Перетащите файлы или нажмите здесь,<br>
+                                            чтобы загрузить
+                                        </p>
+                                    </div>
+                                </div>
+                                <label class="home__file-upload-dropzone-label">
+                                    <input type="file" name="file1[]" class="home__file-upload-dropzone-input">
+                                </label>
+                                <label class="home__file-upload-dropzone-label">
+                                    <input type="file" name="file1[]" class="home__file-upload-dropzone-input">
+                                </label>
+                            </div>
+                            
+                            <div class="home__file-upload-error">
+                                <div class="home__file-upload-error-text">
+                                    Ошибка загрузки
+                                </div>
+
+                                <svg width="14" height="14" aria-hidden="true" class="icon-refresh">
+                                    <use xlink:href="#refresh"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="home__form-block">
+                        <div class="home__form-label">
+                            Электронная подпись <sup>*</sup>
+                        </div>
+                        <div class="home__file-upload js-file-upload-dropzone">
+                            <div class="home__file-upload-dropzone">
+                                <div class="home__file-upload-dropzone-content">
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-upload">
+                                        <use xlink:href="#upload"></use>
+                                    </svg>
+                                    <div class="home__file-upload-dropzone-text">
+                                        <p>
+                                            Перетащите файлы или нажмите здесь,<br>
+                                            чтобы загрузить
+                                        </p>
+                                    </div>
+                                </div>
+                                <label class="home__file-upload-dropzone-label">
+                                    <input type="file" name="file1[]" class="home__file-upload-dropzone-input">
+                                </label>
+                                <label class="home__file-upload-dropzone-label">
+                                    <input type="file" name="file1[]" class="home__file-upload-dropzone-input">
+                                </label>
+                            </div>
+                            
+                            
+                        </div>
+
+
+                    </div>
+                    <button class="btn home__form-button" type="submit">
+                        Проверить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/content}}
+{{/extend}}
