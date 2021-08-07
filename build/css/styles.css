@@ -1150,6 +1150,7 @@ html {
           box-sizing: border-box;
   font-size: 10px;
   -webkit-text-size-adjust: 100%;
+  font-size: clamp(5px, 0.55vw, 10px);
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -1166,6 +1167,7 @@ body {
           flex-direction: column;
   font-family: var(--roboto);
   color: var(--text-color);
+  overflow-y: scroll;
 }
 
 main {
@@ -1672,7 +1674,7 @@ select:-webkit-autofill:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  padding: 15rem 0;
+  padding: 12rem 0;
 }
 .home__col:nth-child(1) {
   padding-right: 5rem;

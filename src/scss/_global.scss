@@ -18,7 +18,7 @@ html {
     box-sizing: border-box;
     font-size: 10px;
     -webkit-text-size-adjust: 100%;
-
+    font-size: clamp(5px, 0.55vw, 10px);
     @include noHighlight();
 }
 
@@ -30,6 +30,7 @@ body {
     flex-direction: column;
     font-family: var(--roboto);
     color: var(--text-color);
+    overflow-y: scroll;
 }
 
 main {
